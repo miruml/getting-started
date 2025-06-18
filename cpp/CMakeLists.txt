@@ -28,6 +28,7 @@ FetchContent_Declare(
     miru
     GIT_REPOSITORY https://github.com/miruml/cpp-sdk.git 
     GIT_TAG ${CURRENT_BRANCH} # replace with desired tag/branch/commit
+    GIT_SUBMODULES "" # disable submodule cloning since the openapi repository inside the cpp-sdk repository is private
 )
 FetchContent_MakeAvailable(miru)
 
