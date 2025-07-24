@@ -3,7 +3,8 @@ from miru_server_sdk.callbacks import Callback, CallbackVerificationError
 
 app = Flask(__name__)
 
-SECRET = "cbsec_UMvqMb6LFuFvd3a3/cAwHELK4IHLPGaKfc+GHl3lBRA="
+# do not place secrets directly in code, this is only for demo purposes
+SECRET = "cbsec_WycPjK+LHQw5hbeL1qcLOGjXsIWYuGzEUrwUZWNz4W4="
 
 
 @app.route("/callback", methods=["POST"])
@@ -30,7 +31,7 @@ def callback_endpoint() -> tuple[Response, int]:
     # return a valid response
     return jsonify({
         'valid': True,
-        'message': 'ok',
+        'message': 'valid config instance deployment',
         'errors': []
     }), 200
 

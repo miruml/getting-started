@@ -4,7 +4,9 @@ This README walks through the setup of a server for locally testing Miru callbac
 # Create the Flask Application
 This is a sample flask application which shows how to verify a callback request using the Miru server-side side SDK.
 
-1. Create a virtual environment
+1. Navigate to the `../python/server-sdk` directory inside this repository
+
+1. Create a virtual environment 
 
     `python3 -m venv .venv`
 
@@ -17,7 +19,7 @@ This is a sample flask application which shows how to verify a callback request 
     `python3 -m pip install -r requirements.txt`
 
 1. Run the application
-
+    `cd flask`
     `python3 app.py`
 
 1. Verify it's running by going to `http://localhost:5000` in your browser. You should see 
@@ -39,14 +41,17 @@ Miru callbacks don't support sending requests to your local machine; requests mu
 
     `ngrok http http://localhost:5000`
 
-    You should see a domain similar to `https://c1971566f336.ngrok-free.app`
+    You should see a domain similar to `https://c1971566f336.ngrok-free.app` being forward to your Flask server.
 
 # Create the Callback in Miru
 
 1. Navigate to the [callbacks page](https://configs.miruml.com/callbacks) in Miru
 
-2. Add your ephemeral ngrok domain (e.g. `https://c1971566f336.ngrok-free.app`) to the callback endpoint
+2. Add your ephemeral ngrok domain with the `/callback` route (e.g. `https://c1971566f336.ngrok-free.app/callback`) to the callback endpoint in the dashboard.
 
 3. Create a callback secret by clicking the Generate Secret button. 
 
-    Be very careful not expose your secret! Never commit a secret to git and use a dedicated secrets manager for storage and application access.
+    Store your secret in a secrets manager or other secure location to inject into your application. The secret will functionally replace the `SECRET` variable in the sample flask application. However, be very careful not expose your secret or store it in git! The usage of the `SECRET` variable is only for demo purposes and is not secure.
+
+
+Your callback is now ready for local testing! Upon any new config instance deployments, Miru will send a validation request to your server before allowing the deployment to occur.
