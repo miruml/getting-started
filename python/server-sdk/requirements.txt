@@ -1,2 +1,2 @@
-miru_server_sdk==0.1.0
+miru_server_sdk==0.2.0
 Flask==3.1.1
