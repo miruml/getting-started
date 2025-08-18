@@ -4,7 +4,7 @@ from miru_server_sdk.webhooks import Webhook, WebhookVerificationError
 app = Flask(__name__)
 
 # do not place secrets directly in code, this is only for demo purposes
-SECRET = "whsec_XRmIwf3AIzFKZaW1TrJv02gl1UZMXBHK"
+SECRET = "whsec_y1fMCLgJoEyi6ZVt9a8aYVmt/4rFAuKa"
 
 
 @app.route("/webhooks/miru", methods=["POST"])
