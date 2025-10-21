@@ -1,1 +1,0 @@
-Visit the official Miru documentation for getting started with C++ [here](https://docs.miruml.com/docs/basics/getting-started/deploy#sdk-in-development)
