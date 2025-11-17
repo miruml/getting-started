@@ -1,4 +1,4 @@
-$miru_config_type_slug: "robot-features"
+x-miru-config-type: "robot-features"
 title: Robot Features Configuration Schema
 type: object
 properties:

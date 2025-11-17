@@ -1,4 +1,4 @@
-$miru_config_type_slug: "communication"
+x-miru-config-type: "communication"
 title: Communication Configuration Schema
 type: object
 required:
