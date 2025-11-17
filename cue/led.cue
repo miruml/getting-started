@@ -1,10 +1,7 @@
 package schemas
 
 @miru(config_type="led")
-
-// LED Configuration Schema
-#Led: {
-
+{
 	// GPIO pin number for LED output
 	output_gpio: int & >=0 & <=40 | *12
 

@@ -2,8 +2,7 @@ package schemas
 
 @miru(config_type="motion-planning")
 
-// Motion Planning Configuration Schema
-#MotionPlanning: {
+{
 	// Planning loop frequency in Hertz
 	planning_frequency_hz: number & >=1.0 & <=100.0 | *20.0
 

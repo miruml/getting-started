@@ -1,10 +1,7 @@
 package schemas
 
-
 @miru(config_type="communication")
-
-// Communication Configuration Schema
-#Communication: {
+{
 	// Control loop frequency in Hertz
 	control_loop_rate_hz: int & >=1 & <=1000 | *50
 

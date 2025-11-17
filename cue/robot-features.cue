@@ -1,9 +1,6 @@
 package schemas
 
-@miru(config_type="robot-features")
-
-// Robot Features Configuration Schema
-#RobotFeatures: {
+{
 	enable_autonomy: bool | *true
 
 	enable_remote_control: bool | *true
