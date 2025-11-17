@@ -1,5 +1,6 @@
 package schemas
 
+@miru(config_type="robot-features")
 {
 	enable_autonomy: bool | *true
 
