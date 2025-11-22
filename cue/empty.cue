@@ -1,6 +1,6 @@
 package schemas
 
-@miru(config_type="mobility")
+@miru(config_type="empty")
 
 // Empty Mobility Schema
 // This is an empty schema that allows any configurations.

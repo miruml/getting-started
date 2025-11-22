@@ -1,4 +1,0 @@
-x-miru-config-type: "mobility"
-$schema: "http://json-schema.org/draft/2020-12/schema"
-title: Empty Mobility
-description: This is an empty schema that allows any configurations. You may find this useful to begin using Miru while you're team works towards adding a schema.
