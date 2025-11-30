@@ -1,4 +1,5 @@
 x-miru-config-type: "motion-planning"
+$schema: "http://json-schema.org/draft/2020-12/schema"
 type: object
 required:
   - planning_frequency_hz
