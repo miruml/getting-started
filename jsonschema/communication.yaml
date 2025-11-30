@@ -1,5 +1,4 @@
 x-miru-config-type: "communication"
-title: Communication Configuration Schema
 type: object
 required:
   - control_loop_rate_hz

@@ -1,5 +1,4 @@
 x-miru-config-type: "safety"
-title: Safety Configuration Schema
 type: object
 required:
   - safety

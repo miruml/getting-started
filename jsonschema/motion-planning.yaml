@@ -1,5 +1,4 @@
 x-miru-config-type: "motion-planning"
-title: Motion Planning Configuration Schema
 type: object
 required:
   - planning_frequency_hz

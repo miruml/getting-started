@@ -1,5 +1,4 @@
 x-miru-config-type: "mobility"
-title: Mobility Configuration Schema
 type: object
 properties:
   max_linear_speed_mps:
