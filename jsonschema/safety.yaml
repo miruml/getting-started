@@ -101,7 +101,7 @@ properties:
             description: Scanning safety zone distance in meters
             minimum: 0.1
             maximum: 1.0
-            default: 2.0
+            default: 0.5
       system_checks:
         type: object
         required:
