@@ -115,19 +115,19 @@ properties:
             description: Minimum voltage threshold in volts
             minimum: 0.1
             maximum: 10.0
-            default: 22.0
+            default: 9.0
           voltage_critical_v:
             type: number
             description: Critical voltage threshold in volts
             minimum: 0.1
             maximum: 10.0
-            default: 20.0
+            default: 8.0
           temperature_max_c:
             type: number
             description: Maximum temperature threshold in Celsius
             minimum: 0.1
             maximum: 10.0
-            default: 60.0
+            default: 5.0
           watchdog_timeout_ms:
             type: integer
             description: Watchdog timeout in milliseconds
