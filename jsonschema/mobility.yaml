@@ -9,7 +9,7 @@ properties:
     default: 1.2
   max_angular_speed_radps:
     type: number
-    minimum: 0.1
+    minimum: 0.2
     maximum: 3.0
     default: 1.0
   obstacle_avoidance_enabled:
