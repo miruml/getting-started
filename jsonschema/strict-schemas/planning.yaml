@@ -1,4 +1,4 @@
-x-miru-config-type: "motion-planning"
+x-miru-config-type: "planning"
 $schema: "http://json-schema.org/draft/2020-12/schema"
 type: object
 required:

@@ -1,7 +1,0 @@
-max_linear_speed_mps: 1.2
-max_angular_speed_radps: 1.0
-obstacle_avoidance_enabled: true
-navigation_mode: balanced
-telemetry:
-  upload_interval_sec: 60
-  heartbeat_interval_sec: 10

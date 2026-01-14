@@ -1,8 +1,0 @@
-enable_autonomy: true
-enable_remote_control: false
-max_payload_kg: 8.5
-preferred_speed_mode: "normal"
-emergency_stop_sensitivity: 0.9
-telemetry:
-  upload_interval_sec: 45
-  heartbeat_interval_sec: 15
