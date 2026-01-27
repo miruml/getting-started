@@ -1,3 +1,3 @@
 x-miru-config-type: "planning"
 $schema: "http://json-schema.org/draft/2020-12/schema"
-description: This is an empty schema that allows any configurations. You may find this useful to begin using Miru while you're team adds constraints over time.
+description: This is an empty schema that allows any configurations. You may find this useful to begin using Miru while you're team adds constraints over time. 
