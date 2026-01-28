@@ -1,0 +1,25 @@
+name: Create Miru Release
+
+on:
+  push:
+    tags: 
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Miru CLI
+        uses: mirurobotics/setup-miru@v0.1
+        with:
+          version: 'v0.9.0-beta.3'
+
+      - name: Create the release
+        env:
+          MIRU_API_KEY: ${{ secrets.MIRU_API_KEY }}
+        run: |
+          miru release create \
+            --version "${{ github.ref_name }}" \
+            --schemas ./schemas
